@@ -8,7 +8,7 @@ import {GlobalStyles} from "./styled/GlobalStyle.tsx";
 
 createRoot(document.getElementById('root')!).render(
     <ThemeProvider theme={myTheme}>
-        <App/>
         <GlobalStyles/>
+        <App/>
     </ThemeProvider>,
 )

@@ -1,5 +1,5 @@
-// import React from 'react';
 import styled from "styled-components";
+import {myTheme} from "../../styled/Them.styled.tsx";
 
 
 export const Menu = (props: { menuItems: Array<string> }) => {
@@ -23,5 +23,14 @@ const StyledMenu = styled.nav`
     ul {
         display: flex;
         gap: 20px;
+
+        & a {
+            color: ${myTheme.colors.font};
+            &:hover{
+                color: ${myTheme.colors.accent};
+                transition: color 0.3s ease-in-out;
+            }
+        }
+
     }
 `
