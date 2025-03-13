@@ -10,6 +10,9 @@ export const myTheme = {
         }
     },
 
+    filter: {
+        dropShadow:'drop-shadow(0 0 10px #7562E0)',
+    },
 
     media: {
         tablet: 'screen and (max-width: 768px) and (min-width: 577px)',

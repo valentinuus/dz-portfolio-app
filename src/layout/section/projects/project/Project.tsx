@@ -20,8 +20,8 @@ export const Project = (props:ProjectPropsType) => {
             <Title>{props.title}</Title>
             <Description>{props.description}</Description>
             <FlexWrapper gap={"18px"}>
-                <Button type={"fill"} flexGrow={"1"}>2222</Button>
-                <Button type={"outlined"} flexGrow={"1"}>2222</Button>
+                <Button styles={"fill"} flexGrow={"1"}>View Live</Button>
+                <Button styles={"outlined"} flexGrow={"1"}>Github Repo</Button>
             </FlexWrapper>
         </StyledProject>
     );
@@ -37,9 +37,9 @@ const StyledProject = styled.li`
 
     background-color: ${myTheme.colors.element};
 
-    .flex-wrapper {
-        margin-top: auto;
-    }
+    //.flex-wrapper {
+    //    margin-top: auto;
+    //}
 
 `
 

@@ -16,8 +16,8 @@ export const Hero = () => {
                         <MainTitle>Jayjay D. Dinero</MainTitle>
                         <MainDescr>Freelance UI designer, Fullstack developer, & Data Miner. I create seamless web experiences for end-users.</MainDescr>
                         <ButtonHeroWrap>
-                            <Button type={"fill"} href="#">About me</Button>
-                            <Button type={"outlined"} href="#">Projects</Button>
+                            <Button styles={"fill"} href="#">About me</Button>
+                            <Button styles={"outlined"} href="#">Projects</Button>
                         </ButtonHeroWrap>
                     </FlexWrapper>
                     <FlexWrapper>

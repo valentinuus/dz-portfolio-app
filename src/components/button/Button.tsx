@@ -3,7 +3,7 @@ import {myTheme} from "../../styled/Them.styled.tsx";
 
 
 type ButtonPropsType = {
-    type: 'fill' | 'outlined'
+    styles: 'fill' | 'outlined'
     // href: string
     icon?: boolean
     flexGrow?: string
@@ -21,15 +21,23 @@ export const Button = styled.a<ButtonPropsType>`
     
     
     //fill
-    ${props => props.type === "fill" && css <ButtonPropsType>`
+    ${props => props.styles === "fill" && css <ButtonPropsType>`
         background-color: ${myTheme.colors.accent};
         border: 2px solid ${myTheme.colors.accent};
+        transition: filter 0.3s ease-in-out ;
+        &:hover {
+            filter: ${myTheme.filter.dropShadow};
+          
+        }
     `}
     
     //outlined
-    ${props => props.type === "outlined" && css <ButtonPropsType>`
+    ${props => props.styles === "outlined" && css <ButtonPropsType>`
         border: 2px solid ${myTheme.colors.accent};
         background-color: transparent;
+        &:hover {
+            filter: ${myTheme.filter.dropShadow};
+        }
     `}
 `
 
