@@ -26,7 +26,8 @@ const StyledMenu = styled.nav`
 
         & a {
             color: ${myTheme.colors.font};
-            &:hover{
+
+            &:hover {
                 color: ${myTheme.colors.accent};
                 transition: color 0.3s ease-in-out;
             }

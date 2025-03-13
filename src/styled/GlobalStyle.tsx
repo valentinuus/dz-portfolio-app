@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         border: none;
         box-sizing: border-box;
+        text-align: start;
     }
 
     a,
@@ -36,6 +37,7 @@ export const GlobalStyles = createGlobalStyle`
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+  
         font-weight: 600;
         
         color: ${myTheme.colors.font};

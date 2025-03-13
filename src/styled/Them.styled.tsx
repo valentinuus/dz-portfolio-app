@@ -3,6 +3,7 @@ export const myTheme = {
         dark: '#1A1A29',
         font: '#fff',
         accent: '#7562E0',
+        element: '#31313F',
         grey: {
             dark: '#BDBDBD',
             light: '#BDBDBD'
