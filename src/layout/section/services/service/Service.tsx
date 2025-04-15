@@ -40,7 +40,7 @@ const StyledService = styled.li`
     flex-direction: column;
     align-items: center;
 
-    flex: 1 1 30%;
+    flex: 1 1 330px;
     align-self: stretch;
 
     padding: 70px 20px 0 20px;
@@ -61,7 +61,6 @@ const StyledService = styled.li`
             color: ${myTheme.colors.accent};
         }
     }
-
 `
 
 const ServiceTitle = styled.h3`

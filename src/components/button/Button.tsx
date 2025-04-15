@@ -6,7 +6,7 @@ type ButtonPropsType = {
     styles: 'fill' | 'outlined'
     // href: string
     icon?: boolean
-    flexGrow?: string
+    flexGrow?: number
 }
 
 
@@ -17,7 +17,7 @@ export const Button = styled.a<ButtonPropsType>`
     cursor: pointer;
     
     color: ${myTheme.colors.font};
-    flex-grow: ${props => props.flexGrow || "0"};
+    flex-grow: ${props => props.flexGrow || 0};
     
     
     //fill
@@ -27,7 +27,6 @@ export const Button = styled.a<ButtonPropsType>`
         transition: filter 0.3s ease-in-out ;
         &:hover {
             filter: ${myTheme.filter.dropShadow};
-          
         }
     `}
     

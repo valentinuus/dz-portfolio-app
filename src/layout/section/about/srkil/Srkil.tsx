@@ -37,12 +37,11 @@ const SkillStyled = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     gap: 6px;
+    flex: 1 0 254px;
 
-    flex: 0 1 25%;
     align-self: stretch;
-
-    padding: 24px 24px 24px 24px;
-    aspect-ratio: 1/1;
+    height: 255px;
+    padding: 24px;
 
     background-color: ${myTheme.colors.grey.light};
     color: ${myTheme.colors.font};
@@ -52,9 +51,14 @@ const SkillStyled = styled.div`
     &:hover {
         background-color: ${myTheme.colors.accent};
     }
+
+    @media ${myTheme.media.mobile} {
+        flex-grow: 0;
+    }
 `
 
 const Title = styled.h3`
+    max-width: 220px;
     text-transform: uppercase;
     font-size: 24px;
 `

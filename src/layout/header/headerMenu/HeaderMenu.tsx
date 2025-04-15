@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import {myTheme} from "../../styled/Them.styled.tsx";
+import {myTheme} from "../../../styled/Them.styled.tsx";
 
 
-export const Menu = (props: { menuItems: Array<string> }) => {
+export const HeaderMenu = (props: { menuItems: Array<string> }) => {
     return (
         <StyledMenu>
             <ul>
@@ -32,5 +32,9 @@ const StyledMenu = styled.nav`
                 transition: color 0.3s ease-in-out;
             }
         }
+    }
+    
+    @media ${myTheme.media.tablet}{
+        display: none;
     }
 `

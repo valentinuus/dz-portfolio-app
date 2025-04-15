@@ -6,7 +6,7 @@ import {myTheme} from "../../../../styled/Them.styled.tsx";
 
 
 type LinkPropsType = {
-    icon: string
+    icon?: string
     href: string
     fill?: string
     stroke?: string
@@ -20,7 +20,7 @@ export const Link = (props: LinkPropsType) => {
     return (
         <LinkFooter href={props.href}>
             <Icon
-                iconId={props.icon}
+                iconId={props.icon || "none"}
                 fill={props.fill || `${myTheme.colors.accent}`}
                 stroke={props.stroke || "none"}
                 width={props.width || "32px"}

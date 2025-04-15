@@ -8,7 +8,7 @@ type SectionTitlePropsType = {
 
 
 export const SectionTitle = styled.h2<SectionTitlePropsType>`
-    margin:${props => props.margin || 0};
+    margin: ${props => props.margin || 0};
     font-weight: 600;
     font-size: 32px;
     color: ${myTheme.colors.accent};

@@ -4,7 +4,7 @@ import {myTheme} from "./Them.styled.tsx";
 
 
 export const GlobalStyles = createGlobalStyle`
-
+    //Глобальные стили 
     *,
     *::before,
     *::after {
@@ -33,8 +33,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
         margin: 0;
         font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
   

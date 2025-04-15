@@ -16,13 +16,13 @@ export const About = () => {
                     Mobile developer. I have honed my skills in Web Development and advance i have core understanding of
                     advance UI design principles. Here are the major skills i have.
                 </AboutDescription>
-                <FlexWrapper gap={"21px"} align={"center"}>
+                <FlexWrapper className="about-experience__wrap" align={"center"} gap={"22px"}>
                     <AboutExperienceYears>5+</AboutExperienceYears>
-                    <AboutExperience>Years of experience. Specialised in building apps, while ensuring a seamless web
+                    <AboutExperienceDescr>Years of experience. Specialised in building apps, while ensuring a seamless web
                         experience for end users.
-                    </AboutExperience>
+                    </AboutExperienceDescr>
                 </FlexWrapper>
-                <FlexWrapper justify={"space-between"} gap={"17px"}>
+                <FlexWrapper className="skills__wrap" justify={"space-between"} gap={"17px"} wrap={"wrap"}>
                     <Skill
                         iconId={"designing"}
                         width={"42px"}
@@ -30,7 +30,6 @@ export const About = () => {
                         viewBox={"0 0 42 42"}
                         fill={myTheme.colors.font}
                         title={"ui & ux designing"}
-
                     />
                     <Skill
                         iconId={"development"}
@@ -38,7 +37,6 @@ export const About = () => {
                         height={"52px"}
                         viewBox={"0 0 52 52"}
                         title={"web development"}
-
                     />
                     <Skill
                         iconId={"mobile"}
@@ -63,21 +61,45 @@ export const About = () => {
 
 const SectionAbout = styled.section`
     margin-top: 55px;
+
+    .about-experience__wrap {
+        margin: 23px 0 58px;
+    }
+
+
+    @media ${myTheme.media.mobile} {
+        .about-experience__wrap {
+            margin-top: 20px;
+            align-items: flex-start;
+            flex-direction: column;
+            line-height: 1.2;
+            gap: 0;
+        }
+
+        .skills__wrap {
+            justify-content: center;
+        }
+    }
 `
 
+
+
+
 const AboutDescription = styled.p`
+    margin-top: 10px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.77778;
     color: ${myTheme.colors.font};
 `
 
+
 const AboutExperienceYears = styled.span`
     font-size: 96px;
     color: ${myTheme.colors.accent};
 `
 
-const AboutExperience = styled.p`
+const AboutExperienceDescr = styled.p`
     font-weight: 500;
     font-size: 24px;
     color: #fff;
